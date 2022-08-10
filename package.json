@@ -3,19 +3,25 @@
   "version": "1.0.0",
   "description": "When building your first playwright project it's recommended that you use the command `npm init playwright@latest` to build out the included test project.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:debug": "npx playwright test --headed --timeout=0 --workers=1 --debug"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BMayhew/playrwight-semantle.git"
+    "url": "git+https://github.com/BMayhew/playwright-semantle.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BMayhew/playrwight-semantle/issues"
+    "url": "https://github.com/BMayhew/playwright-semantle/issues"
   },
-  "homepage": "https://github.com/BMayhew/playrwight-semantle#readme",
+  "homepage": "https://github.com/BMayhew/playwright-semantle#readme",
   "devDependencies": {
     "@playwright/test": "^1.24.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1"
   }
 }
